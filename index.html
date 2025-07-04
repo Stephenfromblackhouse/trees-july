@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025 Tree Order Planning Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p.intro {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      text-align: center;
+      padding: 8px;
+    }
+    .checkbox-group {
+      margin: 15px 0;
+    }
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .note {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>2025 Tree Order Planning Form</h1>
+  <p class="intro">Please help us secure your supply and pricing for the coming season. Due to tight supply across Europe following a late frost, early planning is essential. This form is a planning tool — not in any way a binding commitment.</p>
+
+  <form action="https://formspree.io/f/mrbkdyrq" method="POST">
+    <label>Business Name:</label>
+    <input type="text" name="business" required />
+
+    <label>Contact Person:</label>
+    <input type="text" name="contact" required />
+
+    <label>Email / Phone:</label>
+    <input type="text" name="emailphone" required />
+
+    <h3>1. Estimated Volume Needs</h3>
+    <table>
+      <tr><th>Tree Type</th><th>0–100</th><th>101–300</th><th>301+</th></tr>
+      <tr><td>Nordmann Fir</td><td><input type="checkbox" name="nordmann_0_100" /></td><td><input type="checkbox" name="nordmann_101_300" /></td><td><input type="checkbox" name="nordmann_301" /></td></tr>
+      <tr><td>Norway Spruce</td><td><input type="checkbox" name="spruce_0_100" /></td><td><input type="checkbox" name="spruce_101_300" /></td><td><input type="checkbox" name="spruce_301" /></td></tr>
+      <tr><td>Fraser Fir</td><td><input type="checkbox" name="fraser_0_100" /></td><td><input type="checkbox" name="fraser_101_300" /></td><td><input type="checkbox" name="fraser_301" /></td></tr>
+      <tr><td>Pot Grown Trees</td><td><input type="checkbox" name="potgrown_0_100" /></td><td><input type="checkbox" name="potgrown_101_300" /></td><td><input type="checkbox" name="potgrown_301" /></td></tr>
+    </table>
+
+    <h3>2. Preferred Delivery Week</h3>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="week47" /> Week 47 (17–21 Nov)</label>
+      <label><input type="checkbox" name="week48" /> Week 48 (24–28 Nov)</label>
+      <label><input type="checkbox" name="week49" /> Week 49 (01–05 Dec)</label>
+    </div>
+
+    <h3>3. Indicative Pricing Bands <small>(subject to confirmation)</small></h3>
+    <table>
+      <tr><th>Tree Type</th><th>Grade</th><th>Typical Size (cm)</th><th>Est. Price Range</th></tr>
+      <tr><td>Nordmann Fir</td><td>Classic</td><td>175–200cm</td><td>£23.00–£31.00</td></tr>
+      <tr><td>Nordmann Fir</td><td>Popular</td><td>175–200cm</td><td>£20.00–£29.00</td></tr>
+      <tr><td>Nordmann Fir</td><td>Value</td><td>175–220cm</td><td>£17.50–£22.00</td></tr>
+    </table>
+
+    <h3>4. Supply Options</h3>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="danish" /> I am open to direct Danish-grown stock (grown and marked to the same standard).</label>
+      <label><input type="checkbox" name="ukonly" /> I prefer UK-grown only, even if stock is limited or price is higher.</label>
+      <label><input type="checkbox" name="pallet" /> I am happy to order by the pallet (you only pay for the trees delivered, within a 10% tolerance).</label>
+      <label><input type="checkbox" name="combine" /> I am happy to combine grades to reach a preferred price point.</label>
+    </div>
+
+    <p class="note">Please return this by <strong>10th July</strong> to help us give a firm quote.</p>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
